@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Corrona Virut</title>
+		<link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+        <div id="covid-world">
+            <div class="world">
+                <div class="text-name">Thế Giới</div>
+                <div class="item">
+                    <div class="cases">
+                        <div class="text">SỐ CA NHIỄM</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                    <div class="recovered">
+                        <div class="text">KHỎI</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                    <div class="treating">
+                        <div class="text">ĐANG ĐIỀU TRỊ</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                    <div class="death">
+                        <div class="text">TỬ VONG</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="vn">
+                <div class="text-name">Việt Nam</div>
+                <div class="item">
+                    <div class="cases">
+                        <div class="text">SỐ CA NHIỄM</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                    <div class="recovered">
+                        <div class="text">KHỎI</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                    <div class="treating">
+                        <div class="text">ĐANG ĐIỀU TRỊ</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                    <div class="death">
+                        <div class="text">TỬ VONG</div>
+                        <div class="value"></div>
+                        <div class="note"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <div id="covid">
+	        <div class="content">
+	            <span class="city">Tỉnh/TP</span>
+	            <span class="total">Tổng số ca</span>
+	            <span class="daynow">Hôm nay</span>
+	            <span class="die">Tử vong</span>
+	    </div>
+	        <div class="row">
+				<div class="city0">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city1">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city2">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city3">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city4">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city5">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city6">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city7">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city8">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city9">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city10">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+								<div class="city11">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city12">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city13">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city14">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city15">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city16">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city17">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city18">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city19">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city20">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+								<div class="city21">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city22">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city23">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city24">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city25">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city26">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city27">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city28">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city29">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city30">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city31">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city32">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city33">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city34">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city35">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city36">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city37">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city38">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city39">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city40">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city41">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city42">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city43">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city44">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city45">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city46">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city47">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city48">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city49">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city50">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city51">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city52">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city53">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city54">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city55">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city56">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+			    <div class="city57">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city58">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city59">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city60">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city61">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+				<div class="city62">
+			        <span class="city"></span>
+				    <span class="cases"></span>
+				    <span class="casesToday"></span>
+				    <span class="death"></span>
+				</div>
+            </div>
+        </div>
+
+		<script src="js/min.js"></script>
+	</body>
+</html>

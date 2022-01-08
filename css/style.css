@@ -1,0 +1,235 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+body {
+    width: 98%;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/covid.jpg) no-repeat center/cover;
+    max-width: max-content;
+    margin: 0 auto;
+}
+#covid-world{
+    min-width: 350px;
+	background: no-repeat center/cover;
+	padding: 30px 0;
+	border-radius: 10px;
+	transition: 0.4s;
+	background: #ffffffb5;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: grid;
+}
+
+#covid-world .world .text-name{
+    font-size: 25px;
+    font-weight: 600;
+    border-left: 10px blue solid;
+    padding: 0 10px;
+    margin: 10px;
+    color: red;
+}
+
+#covid-world .vn .text-name{
+    font-size: 25px;
+    font-weight: 600;
+    border-left: 10px blue solid;
+    padding: 0 10px;
+    margin: 10px;
+    color: red;
+}
+
+.world{
+    padding: 0 5px;
+}
+
+.vn{
+    padding: 0 5px;
+}
+
+.item{
+    text-align: center;
+    padding: 8px;
+}
+
+.item .cases .text{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item .recovered .text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.item .treating .text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.item .death .text{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#covid-world .cases .value{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ED1C24;
+}
+
+#covid-world .recovered .value{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #28A745;
+}
+
+#covid-world .treating .value{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #f36906;
+}
+
+#covid-world .death .value{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+
+.item .cases{
+    background: #ed1c2433;;
+    padding: 15px 0;
+    width: 46%;
+    margin: 5px;
+    float: left;
+}
+
+.item .recovered{
+    background: #28a7454d;
+    padding: 15px 0;
+    width: 46%;
+    margin: 5px;
+    float: left;
+}
+
+.item .treating{
+    background: #ff9c0033;
+    padding: 15px 0;
+    width: 46%;
+    margin: 5px;
+    float: left;
+}
+
+.item .death{
+    background: #F0EFF4;
+    padding: 15px 0;
+    width: 46%;
+    margin: 5px;
+    float: left;
+}
+
+
+
+
+#covid{
+    min-width: 350px;
+	background: no-repeat center/cover;
+	text-align: center;
+	padding: 30px 0;
+	border-radius: 10px;
+	transition: 0.4s;
+	background: #ffffffb5;
+	margin-bottom: 20px;
+}
+
+.content{
+   display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    color: #333333;
+    font-family: 'Merriweather';
+    max-height: 400px;
+    padding: 0px 20px 10px 20px;
+    font-weight: 600;
+}
+
+.content .city{
+    color: red;
+    width: 180px;
+    text-align: left;
+}
+.content .total {
+    color: blue;
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+}
+.content .daynow {
+    color: green;
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+}
+.content .die {
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+
+
+.row{
+    width: 100%;
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 0 20px;
+    line-height: 100%;
+}
+
+
+.row > div {
+  
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    line-height: 100%;
+    color: #333333;
+    font-family: 'Merriweather';
+    padding: 15px 0;
+}
+
+.row .city {
+    color: red;
+    width: 180px;
+    text-align: left;
+    font-weight: 500;
+}
+.row .cases {
+    color: blue;
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+}
+.row .casesToday {
+    color: green;
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+}
+.row .death {
+    width: 100px;
+    text-align: right;
+    margin-left: 10px;
+}
+
