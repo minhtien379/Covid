@@ -675,7 +675,7 @@ async function changeCovidUI() {
     
     notecasesvn.innerText = '(+' + data.today.internal.cases.toLocaleString() + ')'
     noterecoveredvn.innerText = '(+' + data.today.internal.recovered.toLocaleString() + ')'
-    notetreatingvn.innerText = '(' + data.today.internal.treating.toLocaleString() + ')'
+    notetreatingvn.innerText = '(+' + data.today.internal.treating.toLocaleString() + ')'
     notedeathvn.innerText = '(+' +  data.today.internal.death.toLocaleString() + ')'
 
 
