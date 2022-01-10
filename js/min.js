@@ -668,46 +668,54 @@ async function changeCovidUI() {
     treatingvn.innerText = data.total.internal.treating.toLocaleString()
     deathvn.innerText = data.total.internal.death.toLocaleString()
     
-    notecasesw.innerText = '(+' + data.today.world.cases.toLocaleString() + ')'
-    noterecoveredw.innerText = '(+' + data.today.world.recovered.toLocaleString() + ')'
-    notetreatingw.innerText = '(+' + data.today.world.treating.toLocaleString() + ')'
-    notedeathw.innerText = '(+' + data.today.world.death.toLocaleString() + ')'
+    const ncasesw = Math.round(data.today.world.cases)
+    const nrecoveredw = Math.round(data.today.world.recovered)
+    const ntreatingw = Math.round(data.today.world.treating)
+    const ndeathw = Math.round(data.today.world.death)
     
-    notecasesvn.innerText = '(+' + data.today.internal.cases.toLocaleString() + ')'
-    noterecoveredvn.innerText = '(+' + data.today.internal.recovered.toLocaleString() + ')'
-    notetreatingvn.innerText = '(+' + data.today.internal.treating.toLocaleString() + ')'
-    notedeathvn.innerText = '(+' +  data.today.internal.death.toLocaleString() + ')'
-
-
-
-  
+    const ncasesvn = Math.round(data.today.internal.cases)
+    const nrecoveredvn = Math.round(data.today.internal.recovered)
+    const ntreatingvn = Math.round(data.today.internal.treating)
+    const ndeathvn = Math.round(data.today.internal.death)
+    
+    
+    ncasesw >= 0
+            ? (notecasesw.innerText = '(+' + data.today.world.cases.toLocaleString() + ')')
+            : (notecasesw.innerText = '(' + data.today.world.cases.toLocaleString() + ')')
+            
+    ncasesvn >= 0
+            ? (notecasesvn.innerText = '(+' + data.today.internal.cases.toLocaleString() + ')')
+            : (notecasesvn.innerText = '(' + data.today.internal.cases.toLocaleString() + ')')
+            
+            
+    nrecoveredw >= 0
+            ? (noterecoveredw.innerText = '(+' + data.today.world.recovered.toLocaleString() + ')')
+            : (noterecoveredw.innerText = '(' + data.today.world.recovered.toLocaleString() + ')')
+            
+    nrecoveredvn >= 0
+            ? (noterecoveredvn.innerText = '(+' + data.today.internal.recovered.toLocaleString() + ')')
+            : (noterecoveredvn.innerText = '(' + data.today.internal.recovered.toLocaleString() + ')')
+            
+            
+    ntreatingw >= 0
+            ? (notetreatingw.innerText = '(+' + data.today.world.treating.toLocaleString() + ')')
+            : (notetreatingw.innerText = '(' + data.today.world.treating.toLocaleString() + ')')
+            
+    ntreatingvn >= 0
+            ? (notetreatingvn.innerText = '(+' + data.today.internal.treating.toLocaleString() + ')')
+            : (notetreatingvn.innerText = '(' + data.today.internal.treating.toLocaleString() + ')')
+            
+            
+    ndeathw >= 0
+            ? (notedeathw.innerText = '(+' + data.today.world.death.toLocaleString() + ')')
+            : (notedeathw.innerText = '(' + data.today.world.death.toLocaleString() + ')')
+            
+    ndeathvn >= 0
+            ? (notedeathvn.innerText = '(+' + data.today.internal.death.toLocaleString() + ')')
+            : (notedeathvn.innerText = '(' + data.today.internal.death.toLocaleString() + ')')
+    
 }
 
 
 
 changeCovidUI()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
